@@ -1,0 +1,38 @@
+body {
+  padding-top: 0px;
+}
+
+.button, button, .top-bar-section ul>li a, h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+    font-style:italic;
+}
+
+label{
+    font-size:1rem;
+}
+
+.panel {
+  border:none;
+}
+
+html, body, #main, #map {
+    height: 100%;
+}
+
+#main {
+  padding-top:1rem
+}
+
+#map {
+  position:relative;
+  top:-1rem;
+  cursor:default;
+}
+
+#controls {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:0;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "habitat-location-client",
+  "version": "0.0.0",
+  "authors": [
+    "Richard Pope <richard@memespring.co.uk>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "zurb/bower-foundation#~5.2.2",
+    "roboto-slab-fontface": "*",
+    "leaflet": "~0.7.2"
+  }
+}

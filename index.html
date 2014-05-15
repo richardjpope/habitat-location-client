@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Habitat scenarios</title>
+  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="/bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="/bower_components/backbone/backbone.js"></script>
+  <script type="text/javascript"  src="/bower_components/foundation/js/foundation.min.js"></script>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+  <script type="text/javascript"  src="/app.js"></script>
+  <link rel='stylesheet' href='/bower_components/roboto-slab-fontface/roboto-slab-fontface.css' type='text/css'>
+  <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">Location</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-form">
+          <a href="#/settings">Settings</a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+  <div id="main" class="row">
+
+  </div>
+
+  <!-- Templates -->
+  <script type="text/template" id="tpl-authorize">
+    <div id="authorize" class="small-10 small-centered columns">
+      <div class="panel">
+        <h2>Location</h2>
+        <p>
+          This app lets you report your location to your habitat server. You need to authorize it first.
+        </p>
+        <form class="authorize">
+          <label> Habitat server URL
+            <input type="url" value="http://localhost:5000">
+          </label>
+          <button class="alert expand" style="button">Authorize</button>
+        </form>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/template" id="tpl-map">
+    <div id="map">
+    </div>
+    <div id="controls" class="panel">
+        <button class="expand">Report location</button>
+    </div>
+  </script>
+
+  <script type="text/template" id="tpl-settings">
+    <div class="small-10 small-centered columns">
+      <div class="panel">
+        <h2>Settings</h2>
+        <p class="reset">
+          <button class="alert expand" style="button">Reset</button>
+        </p>
+
+      </div>
+    </div>
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).foundation();
+  </script>
+
+</body>
+</html>
