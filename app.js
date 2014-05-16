@@ -8,7 +8,7 @@ $(document).ready( function(){
   var report_location = function(coordinates){
     occured_at = new Date()
     lnglat =  { "type": "Point", "coordinates": [coordinates.longitude, coordinates.latitude] }
-    data = {latlng: lnglat, occured_at: occured_at};
+    data = {lnglat: lnglat, occured_at: occured_at};
 
     $.ajax({
       type: "POST",
@@ -89,7 +89,7 @@ $(document).ready( function(){
       "/oauth/authorize" +
       "?response_type=token" +
       "&client_id=" + client_id +
-      "&scope=" + encodeURIComponent('location:add') +
+      "&scope=" + encodeURIComponent('locations:add') +
       "&redirect_uri=" + encodeURIComponent(redirect_uri);
 
       window.location.assign(auth_url);
